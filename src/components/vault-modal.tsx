@@ -2,7 +2,10 @@
 
 import React, { useEffect, useMemo, useState } from 'react';
 import { marked } from 'marked';
-const renderMarkdown = (text: string) => marked.parse(text) as string;
+// Accept an options object for forward-compat with richer renderers; we
+// ignore it for now and rely on `marked`'s defaults.
+const renderMarkdown = async (text: string, _opts?: unknown): Promise<string> =>
+  (await marked.parse(text)) as string;
 import { X, Pencil, Check, Trash2, SquareStack } from 'lucide-react';
 import type { VaultDoc } from './vault-store';
 import { buildVaultAdjacency, kHopNeighbors } from './vault-graph-queries';

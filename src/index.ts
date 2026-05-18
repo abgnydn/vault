@@ -1,14 +1,7 @@
 // vault — public API
 //
-// Re-exports the components, hooks, and core modules that the consuming app's
-// viewer/brain pages (and any future consumer) import. Anything
-// not exported here is internal.
-//
-// NOTE: This file resolves cleanly TypeScript-wise, but the components still
-// import `@/lib/collab/y-provider`, `@/lib/brain-hub-client`, and `@/i18n`
-// from vault. Until those 3 deps are resolved (see CLAUDE.md "Known
-// coupling"), vault won't build standalone — it can only be consumed by a
-// host that provides those modules under the same paths.
+// All public components, hooks, and pure-function modules. Anything not
+// re-exported here is internal.
 
 // Top-level UI
 export { VaultExperience } from './components/vault-experience';

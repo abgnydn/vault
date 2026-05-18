@@ -16,9 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx"
-  ],
-  "exclude": ["node_modules", "dist", "e2e"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "dist", "src/app", "src/__tests__", "e2e"]
 }
