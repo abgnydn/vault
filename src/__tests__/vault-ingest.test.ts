@@ -82,8 +82,8 @@ import {
   parseFile,
   parseFiles,
   rtfToText,
-} from '@/components/vault/vault-ingest';
-import { importDocs } from '@/components/vault/vault-store';
+} from '@/components/vault-ingest';
+import { importDocs } from '@/components/vault-store';
 
 function makeFile(name: string, body: string | ArrayBuffer, type = ''): File {
   return new File([body as BlobPart], name, { type });

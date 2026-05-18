@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { buildEdges, extractLinkedIds } from '@/components/vault/vault-links';
-import type { VaultDoc } from '@/components/vault/vault-store';
+import { buildEdges, extractLinkedIds } from '@/components/vault-links';
+import type { VaultDoc } from '@/components/vault-store';
 
 function doc(id: string, title: string, content: string): VaultDoc {
   return {

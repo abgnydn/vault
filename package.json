@@ -73,6 +73,7 @@
     "@playwright/test": "^1.0.0",
     "@types/react": "^19.0.0",
     "@types/three": "^0.180.0",
+    "jsdom": "^25.0.0",
     "pdfjs-dist": "^4.0.0",
     "tsup": "^8.3.0",
     "typescript": "^5.8.0",

@@ -8,8 +8,8 @@ import {
   vaultHubs,
   communities,
   type Adjacency,
-} from '@/components/vault/vault-graph-queries';
-import type { VaultDoc } from '@/components/vault/vault-store';
+} from '@/components/vault-graph-queries';
+import type { VaultDoc } from '@/components/vault-store';
 
 function doc(id: string, title: string, content: string): VaultDoc {
   return { id, title, content, tint: 'cyan', createdAt: 0, updatedAt: 0 };

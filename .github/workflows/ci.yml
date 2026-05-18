@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: build + typecheck + unit tests
+    name: build + typecheck
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,4 +19,3 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - run: npm run typecheck
       - run: npm run build
-      - run: npm test

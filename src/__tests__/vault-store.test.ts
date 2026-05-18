@@ -9,7 +9,7 @@ import {
   renameVault,
   seedManyDocs,
   type VaultState,
-} from '@/components/vault/vault-store';
+} from '@/components/vault-store';
 
 function makeState(): VaultState {
   return { name: 'Test Vault', docs: [] };
