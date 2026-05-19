@@ -27,7 +27,7 @@ export default defineConfig({
     'marked',
     'pdfjs-dist',
     'postprocessing',
-    'xlsx',
+    '@e965/xlsx',
     'y-webrtc',
     'yjs',
   ],
